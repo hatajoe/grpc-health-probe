@@ -11,9 +11,9 @@ jobs:
     - name: Setup Go
       uses: actions/setup-go@v5
       with:
-        go-version: '1.22'
+        go-version: '1.23'
     - name: GoReleaser
       uses: goreleaser/goreleaser-action@v6
       with:
         version: latest
-        args: release --snapshot --clean 
+        args: release --snapshot --clean
